@@ -34,10 +34,7 @@ var config = {
 
 ## Heroku
 
-Auth-static was created to solve the problem of serving content on Heroku behind basic http auth.
-
-The simplest way to get up and running on Heroku (assuming you've already installed the [Heroku Toolbelt](https://toolbelt.heroku.com/
-)) is to:
+The simplest way to get up and running on with auth-static on Heroku (assuming you've already installed the [Heroku Toolbelt](https://toolbelt.heroku.com/)) is to:
 
 1. Create a Heroku app
 1. Install `auth-static` via NPM
@@ -48,7 +45,7 @@ The simplest way to get up and running on Heroku (assuming you've already instal
 1. Push your code to Heroku
 1. Test your app
 
-### In detail
+### In more detail
 
 #### 1. Create a Heroku app
 
@@ -69,7 +66,8 @@ var server = require('auth-static')
 
 server({
 	options: {
-		// supports node-static options
+	    cache: 3600,
+	    gzip: true
 	},
 	node_env: process.env.NODE_ENV,
 	password: process.env.PASSWORD,
