@@ -1,0 +1,28 @@
+{
+  "name": "auth-static",
+  "version": "1.0.0",
+  "description": "Super-simple node-static server with http basic auth",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dennisimo/auth-static.git"
+  },
+  "keywords": [
+    "static",
+    "server",
+    "basic-auth"
+  ],
+  "author": "Andy Dennis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dennisimo/auth-static/issues"
+  },
+  "homepage": "https://github.com/dennisimo/auth-static",
+  "dependencies": {
+    "basic-auth": "^1.0.1",
+    "node-static": "^0.7.6"
+  }
+}
