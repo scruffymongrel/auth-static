@@ -1,6 +1,6 @@
 {
   "name": "auth-static",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Super-simple node-static server with http basic auth",
   "main": "index.js",
   "scripts": {
