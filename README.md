@@ -1,6 +1,6 @@
 # Auth-static
 
-A simple node-static server with http basic auth, perfect for serving static content on Heroku behind a username and password.
+A super-simple node-static server with http basic auth, perfect for serving static content on Heroku behind a username and password.
 
 Works as a simple static server without authentication until pushed to production, whereupon basic HTTP authentication is employed.
 
@@ -94,7 +94,7 @@ web: node index.js
 
 #### 5. Set up the config variables in the Heroku Dashboard
 
-Visit <https://dashboard.herokuapp.com/>, navigate to the settings page for your app and edit the config variables. We need to create pairs for `NODE_ENV`, 'USERNAME', and 'PASSWORD'. `NODE_ENV` needs a value of `productio` for everything to work, whereas the the other two can be whatever you want.
+Visit <https://dashboard.herokuapp.com/>, navigate to the settings page for your app and edit the config variables. We need to create pairs for `NODE_ENV`, `USERNAME`, and `PASSWORD`. `NODE_ENV` needs a value of `productio` for everything to work, whereas the the other two can be whatever you want.
 
 #### 6. Commit your changes
 
@@ -106,4 +106,4 @@ Visit <https://dashboard.herokuapp.com/>, navigate to the settings page for your
 
 #### 8. Test your app
 
-Running `heroku open` will open your app in your browser of choice. If everything has worked, you will be presented with a basic auth form; enter your username and passowrd and you'll be able to see your static content.
+Running `heroku open` will open your app (e.g. <https://your-app-name.herokuapp.com/>) in your browser of choice. If everything has worked, you will be presented with a basic auth form; enter your username and passowrd and you'll be able to see your static content.
