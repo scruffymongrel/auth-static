@@ -23,7 +23,6 @@ var config = {
 	options: {
 		// supports node-static options
 	},
-	node_env: process.env.NODE_ENV, // environment variable
 	password: process.env.PASSWORD, // environment variable
 	port: 1234,                     // port for localhost only
 	realm: 'Private',               // label for the auth form
@@ -69,7 +68,6 @@ server({
 	    cache: 3600,
 	    gzip: true
 	},
-	node_env: process.env.NODE_ENV,
 	password: process.env.PASSWORD,
 	port: 1234,
 	realm: 'Private',
